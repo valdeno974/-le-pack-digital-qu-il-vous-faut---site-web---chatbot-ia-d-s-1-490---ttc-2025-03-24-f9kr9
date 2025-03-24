@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le pack digital - Site web + Chatbot IA</title>
     <meta name="description" content="Des solutions digitales simples, efficaces et rentables pour votre entreprise">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .transition-all { transition: all 0.3s ease-in-out; }
+        .hover-scale:hover { transform: scale(1.02); }
+        .hover-shadow:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Announcement Bar -->
@@ -17,28 +31,44 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold text-gray-800">Valdeno</a>
+                <a href="https://valdeno974.github.io/-le-pack-digital-qu-il-vous-faut---site-web---chatbot-ia-d-s-1-490---ttc-2025-03-24-f9kr9" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">Valdeno</a>
             </div>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Fonctionnalités</a>
                 <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Avantages</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Témoignages</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">À propos</a>
                 <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     Commander
                 </button>
             </div>
-            <button class="md:hidden text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Fonctionnalités</a>
+            <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Avantages</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Témoignages</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">À propos</a>
+            <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">FAQ</a>
+            <a href="#" class="block px-4 py-2 text-white bg-blue-600 hover:bg-blue-700">Commander</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center">
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Hero background" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" 
+                 alt="Hero background" 
+                 class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/70"></div>
         </div>
         <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
@@ -46,7 +76,7 @@
                 Le pack digital qu'il vous faut : site web + chatbot IA dès 1 490 € TTC
             </h1>
             <p class="text-xl md:text-2xl mb-8">Des solutions digitales simples, efficaces et rentables</p>
-            <button class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+            <button class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 Découvrir l'offre
             </button>
         </div>
@@ -57,32 +87,31 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Nos caractéristiques principales</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105">
                     <div class="text-blue-600 mb-4">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                        <i class="fas fa-credit-card text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Paiement unique</h3>
-                    <p class="text-gray-600">Sans abonnement ni frais cachés, profitez d'une solution complète avec un paiement unique.</p>
+                    <p class="text-gray-600">Sans abonnement ni frais cachés, profitez d'une solution complète avec un paiement unique. Investissement transparent et maîtrisé.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105">
                     <div class="text-blue-600 mb-4">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
+                        <i class="fas fa-rocket text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Déploiement rapide</h3>
-                    <p class="text-gray-600">Mise en place rapide et efficace de votre solution digitale complète.</p>
+                    <p class="text-gray-600">Mise en place rapide et efficace de votre solution digitale complète en seulement quelques jours. Résultats immédiats.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:scale-105">
                     <div class="text-blue-600 mb-4">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                        <i class="fas fa-headset text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Support professionnel</h3>
-                    <p class="text-gray-600">Une équipe dédiée pour vous accompagner dans votre réussite digitale.</p>
+                    <p class="text-gray-600">Une équipe dédiée pour vous accompagner dans votre réussite digitale. Assistance technique et conseils personnalisés.</p>
                 </div>
             </div>
         </div>
@@ -96,13 +125,20 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
                         <h3 class="text-3xl font-bold mb-6">Améliorez l'expérience client</h3>
-                        <p class="text-gray-600 mb-6">Offrez une expérience utilisateur optimale grâce à notre solution digitale complète.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                        <p class="text-gray-600 mb-6">
+                            Transformez radicalement l'interaction avec vos clients grâce à notre solution digitale intégrée. 
+                            Notre plateforme combine un site web professionnel et un chatbot IA intelligent pour offrir une 
+                            expérience utilisateur fluide et personnalisée 24/7. Augmentez votre taux de conversion et 
+                            fidélisez votre clientèle avec des outils performants et innovants.
+                        </p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                             En savoir plus
                         </button>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Amélioration expérience client" class="rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
+                             alt="Amélioration expérience client" 
+                             class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                 </div>
             </div>
@@ -113,12 +149,19 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Présence 24/7" class="rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" 
+                             alt="Présence 24/7" 
+                             class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold mb-6">Présence 24/7</h3>
-                        <p class="text-gray-600 mb-6">Restez disponible pour vos clients à tout moment grâce au chatbot IA.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                        <p class="text-gray-600 mb-6">
+                            Ne manquez plus aucune opportunité commerciale grâce à notre chatbot IA disponible en permanence. 
+                            Il répond instantanément aux questions de vos clients, qualifie les leads et programme des rendez-vous, 
+                            même pendant vos heures de fermeture. Une solution intelligente qui optimise votre service client 
+                            et booste votre chiffre d'affaires.
+                        </p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                             En savoir plus
                         </button>
                     </div>
@@ -131,15 +174,107 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
-                        <h3 class="text-3xl font-bold mb-6">Productivité</h3>
-                        <p class="text-gray-600 mb-6">Optimisez votre temps et vos ressources avec nos outils automatisés.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                        <h3 class="text-3xl font-bold mb-6">Productivité maximale</h3>
+                        <p class="text-gray-600 mb-6">
+                            Automatisez vos tâches répétitives et concentrez-vous sur l'essentiel. Notre solution intégrée 
+                            gère automatiquement les demandes courantes, qualifie vos prospects et organise votre agenda. 
+                            Réduisez vos coûts opérationnels tout en augmentant votre efficacité grâce à des outils 
+                            intelligents qui travaillent pour vous 24h/24.
+                        </p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                             En savoir plus
                         </button>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Productivité" class="rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" 
+                             alt="Productivité" 
+                             class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">À propos de nous</h2>
+            <div class="space-y-8">
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Fondée en 2020, Valdeno est née de la vision d'entrepreneurs passionnés par l'innovation digitale. 
+                    Notre mission initiale était simple : démocratiser l'accès aux technologies avancées pour les entreprises 
+                    de toutes tailles. Depuis notre création, nous avons accompagné plus de 500 entreprises dans leur 
+                    transformation digitale, en développant des solutions sur mesure qui allient simplicité et performance.
+                </p>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Aujourd'hui, notre engagement reste le même : fournir des solutions digitales accessibles, innovantes 
+                    et rentables. Nos valeurs fondamentales - l'innovation, la transparence et l'excellence du service client - 
+                    guident chacune de nos actions. Nous croyons fermement que la technologie doit être un facilitateur 
+                    de croissance pour toutes les entreprises, quelle que soit leur taille.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Ce que nos clients disent</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Le chatbot IA a révolutionné notre service client. Nous avons réduit notre temps de réponse de 80% et augmenté nos conversions de 35%."</p>
+                    <div class="font-semibold">Sophie Martin</div>
+                    <div class="text-sm text-gray-500">Directrice Marketing, TechPro</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Solution complète et efficace. Notre nouveau site web génère 50% de leads supplémentaires et le chatbot gère parfaitement le premier contact."</p>
+                    <div class="font-semibold">Pierre Dubois</div>
+                    <div class="text-sm text-gray-500">CEO, Innovation Plus</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"L'équipe de support est exceptionnelle. Ils ont parfaitement compris nos besoins et le résultat dépasse nos attentes."</p>
+                    <div class="font-semibold">Marie Leroy</div>
+                    <div class="text-sm text-gray-500">Responsable Digital, StyleCo</div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Le meilleur investissement digital que nous ayons fait. ROI positif dès le premier mois grâce à l'automatisation des tâches répétitives."</p>
+                    <div class="font-semibold">Thomas Bernard</div>
+                    <div class="text-sm text-gray-500">Fondateur, GrowthLab</div>
                 </div>
             </div>
         </div>
@@ -150,27 +285,71 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Questions fréquentes</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
                     <button class="w-full text-left px-6 py-4 focus:outline-none">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">Comment fonctionne le paiement unique ?</h3>
-                            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
                         </div>
+                        <p class="mt-2 text-gray-600 hidden">Le paiement unique couvre l'ensemble des services : création du site web, 
+                        intégration du chatbot IA, configuration initiale et formation. Pas de frais mensuels cachés.</p>
                     </button>
                 </div>
-                <!-- Add more FAQ items as needed -->
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Quel est le délai de mise en place ?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                        <p class="mt-2 text-gray-600 hidden">La mise en place complète prend généralement 5 jours ouvrés, 
+                        incluant la création du site, l'intégration du chatbot et les tests.</p>
+                    </button>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Le chatbot est-il personnalisable ?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                        <p class="mt-2 text-gray-600 hidden">Oui, le chatbot est entièrement personnalisable selon vos besoins : 
+                        réponses, ton, scénarios de conversation et intégration avec vos outils existants.</p>
+                    </button>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Quel support est inclus ?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                        <p class="mt-2 text-gray-600 hidden">Vous bénéficiez d'un support technique prioritaire pendant 30 jours, 
+                        incluant assistance par email, téléphone et formation à l'utilisation des outils.</p>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="relative py-24 bg-gray-900 text-white">
-        <div class="container mx-auto px-4 text-center">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop&q=80" 
+                 alt="CTA background" 
+                 class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Prêt à transformer votre présence digitale ?</h2>
-            <p class="text-xl mb-8">Contactez-nous dès maintenant pour démarrer votre projet</p>
-            <a href="mailto:contact@valdeno.re" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Rejoignez les entreprises qui ont déjà fait le choix de l'innovation 
+            et de l'efficacité. Contactez-nous dès maintenant pour démarrer votre transformation digitale.</p>
+            <a href="mailto:contact@valdeno.re" 
+               class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 
+               transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                 Nous contacter
             </a>
         </div>
@@ -186,27 +365,40 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact</h4>
-                    <p class="text-gray-400">contact@valdeno.re</p>
+                    <p class="text-gray-400">Email: contact@valdeno.re</p>
+                    <p class="text-gray-400">Tél: +262 262 00 00 00</p>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Liens utiles</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Mentions légales</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Politique de confidentialité</a></li>
+                        <li>
+                            <a href="https://valdeno974.github.io/-le-pack-digital-qu-il-vous-faut---site-web---chatbot-ia-d-s-1-490---ttc-2025-03-24-f9kr9/blog.html" 
+                               class="hover:text-white transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://valdeno974.github.io/-le-pack-digital-qu-il-vous-faut---site-web---chatbot-ia-d-s-1-490---ttc-2025-03-24-f9kr9/terms.html" 
+                               class="hover:text-white transition-colors duration-300">Conditions générales</a>
+                        </li>
+                        <li>
+                            <a href="https://valdeno974.github.io/-le-pack-digital-qu-il-vous-faut---site-web---chatbot-ia-d-s-1-490---ttc-2025-03-24-f9kr9/privacy.html" 
+                               class="hover:text-white transition-colors duration-300">Politique de confidentialité</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Suivez-nous</h4>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
+                            <i class="fab fa-facebook-f text-2xl"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
@@ -216,5 +408,48 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion
+            const faqButtons = document.querySelectorAll('#faq button');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.querySelector('p');
+                    const icon = button.querySelector('i');
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        });
+    </script>
+</body>
 </body>
 </html>
